@@ -1,6 +1,6 @@
 {
   "name": "ocr-tool",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A ocr tool powered by tesseract.js.",
   "main": "index.js",
   "scripts": {
@@ -63,7 +63,6 @@
     "stylelint": "10.1.0",
     "stylelint-config-standard": "18.3.0",
     "ts-loader": "6.1.0",
-    "tslib": "1.10.0",
     "type-coverage": "2.3.0",
     "typescript": "3.6.3",
     "vue": "2.6.10",
@@ -80,6 +79,7 @@
     "express": "^4.17.1",
     "minimist": "^1.2.0",
     "tesseract.js": "^2.0.0-alpha.15",
-    "tmp": "^0.1.0"
+    "tmp": "^0.1.0",
+    "tslib": "^1.10.0"
   }
 }
