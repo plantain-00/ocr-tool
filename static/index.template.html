@@ -1,2 +1,9 @@
 <div>
+  <div v-for="language in languages">
+    <input type="checkbox" :id="language" :value="language" v-model="selectedLanguages">
+    <label :for="language">{{language}}</label>
+  </div>
+  <file-uploader @file-got="fileGot($event)" accept="image/*">
+  </file-uploader>
+  <pre>{{text}}</pre>
 </div>

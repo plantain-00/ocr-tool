@@ -7,7 +7,7 @@
 import { App } from "./index"
 
 // @ts-ignore
-export function indexTemplateHtml(this: App) {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div')}
+export function indexTemplateHtml(this: App) {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._l((_vm.languages),function(language){return _c('div',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.selectedLanguages),expression:"selectedLanguages"}],attrs:{"type":"checkbox","id":language},domProps:{"value":language,"checked":Array.isArray(_vm.selectedLanguages)?_vm._i(_vm.selectedLanguages,language)>-1:(_vm.selectedLanguages)},on:{"change":function($event){var $$a=_vm.selectedLanguages,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=language,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.selectedLanguages=$$a.concat([$$v]))}else{$$i>-1&&(_vm.selectedLanguages=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.selectedLanguages=$$c}}}}),_vm._v(" "),_c('label',{attrs:{"for":language}},[_vm._v(_vm._s(language))])])}),_vm._v(" "),_c('file-uploader',{attrs:{"accept":"image/*"},on:{"file-got":function($event){return _vm.fileGot($event)}}}),_vm._v(" "),_c('pre',[_vm._v(_vm._s(_vm.text))])],2)}
 // @ts-ignore
 export var indexTemplateHtmlStatic = [  ]
 /* eslint-enable */

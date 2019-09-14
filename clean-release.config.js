@@ -14,7 +14,7 @@ module.exports = {
   releaseRepository: 'https://github.com/plantain-00/ocr-tool-release.git',
   postScript: [
     'cd "[dir]" && rm -rf .git',
-    'cp Dockerfile "[dir]"',
-    'cd "[dir]" && docker build -t plantain-00/ocr-tool . && docker push plantain-00/ocr-tool'
+    // 'cp Dockerfile "[dir]"',
+    // 'cd "[dir]" && docker build -t plantain-00/ocr-tool . && docker push plantain-00/ocr-tool'
   ]
 }

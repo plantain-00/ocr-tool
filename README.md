@@ -12,10 +12,13 @@ A ocr tool powered by tesseract.js.
 
 ```bash
 git clone https://github.com/plantain-00/ocr-tool-release.git . --depth=1 && yarn add --production
+node dist index.js -p 9444
 ```
+
+then open <http://localhost:9444>
 
 ## docker
 
 ```bash
-docker run -d -p 8000:8000 plantain-00/ocr-tool
+docker run -d -p 9444:9444 plantain-00/ocr-tool
 ```

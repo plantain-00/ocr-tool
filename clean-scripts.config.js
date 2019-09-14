@@ -13,7 +13,7 @@ const revStaticCommand = 'rev-static --config static/rev-static.config.js'
 const cssCommand = [
   'lessc static/index.less > static/index.css',
   'postcss static/index.css -o static/index.postcss.css',
-  'cleancss -o static/index.bundle.css static/index.postcss.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css'
+  'cleancss -o static/index.bundle.css static/index.postcss.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css ./node_modules/file-uploader-component/dist/file-uploader.min.css'
 ]
 
 module.exports = {
@@ -41,7 +41,7 @@ module.exports = {
     export: `no-unused-export "src/**/*.ts" --strict --need-module tslib`,
     commit: `commitlint --from=HEAD~1`,
     markdown: `markdownlint README.md`,
-    typeCoverage: 'type-coverage -p src --strict',
+    typeCoverage: 'type-coverage -p src --strict --ignore-files "src/tesseract.d.ts"',
     typeCoverageStatic: 'type-coverage -p static --strict --ignore-files "static/variables.ts"'
   },
   test: {
