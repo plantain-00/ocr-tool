@@ -4867,11 +4867,6 @@ no-unused-export@1.9.0:
     tslib "1"
     typescript "3"
 
-node-fetch@^2.3.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
-
 node-libs-browser@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/node-libs-browser/-/node-libs-browser-2.2.1.tgz#b64f513d18338625f90346d27b0d235e631f6425"
@@ -6845,10 +6840,10 @@ terser@^4.1.2:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-tesseract.js-core@^2.0.0-beta.11:
-  version "2.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/tesseract.js-core/-/tesseract.js-core-2.0.0-beta.11.tgz#c35e3e689efad30138603977ad7eaaac44c7fd37"
-  integrity sha512-07haKH2JYYo0OfIJoioMS9dDiI5Hrl7+r1MqjeNAAT5WpKO0ATe4cpncC8s1kz0e3s1kaC5WOwL3YJcjbJE+hg==
+tesseract.js-core@^2.0.0-beta.12:
+  version "2.0.0-beta.12"
+  resolved "https://registry.npm.taobao.org/tesseract.js-core/download/tesseract.js-core-2.0.0-beta.12.tgz#268da4d4c6cfce6bb7c255377554e854357188d2"
+  integrity sha1-Jo2k1MbPzmu3wlU3dVToVDVxiNI=
 
 tesseract.js-utils@^1.0.0-beta.8:
   version "1.0.0-beta.8"
@@ -6862,18 +6857,17 @@ tesseract.js-utils@^1.0.0-beta.8:
     is-url "^1.2.4"
     zlibjs "^0.3.1"
 
-tesseract.js@^2.0.0-alpha.15:
-  version "2.0.0-alpha.15"
-  resolved "https://registry.yarnpkg.com/tesseract.js/-/tesseract.js-2.0.0-alpha.15.tgz#9887f4d1c10e25bb098fde7a10580c865c362fad"
-  integrity sha512-qM1XUFVlTO+tx6oVRpd9QQ8PwQLxo3qhbfIHByUlUVIqWx6y/U9xlHIaG033/Tjfs2EQ0NAehPTOJ+eNElsXEg==
+tesseract.js@^2.0.0-alpha.16:
+  version "2.0.0-alpha.16"
+  resolved "https://registry.npm.taobao.org/tesseract.js/download/tesseract.js-2.0.0-alpha.16.tgz#1e17717234a1464481abe12283f2c3ac79603d2e"
+  integrity sha1-HhdxcjShRkSBq+Eig/LDrHlgPS4=
   dependencies:
     axios "^0.18.0"
     check-types "^7.4.0"
     is-url "1.2.2"
-    node-fetch "^2.3.0"
     opencollective-postinstall "^2.0.2"
     resolve-url "^0.2.1"
-    tesseract.js-core "^2.0.0-beta.11"
+    tesseract.js-core "^2.0.0-beta.12"
     tesseract.js-utils "^1.0.0-beta.8"
 
 text-extensions@^1.0.0:
