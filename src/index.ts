@@ -1,4 +1,4 @@
-import { TesseractWorker } from 'tesseract.js';
+import Tesseract from 'tesseract.js'
 import express from 'express'
 import minimist from 'minimist'
 import bodyParser from 'body-parser'
@@ -17,9 +17,7 @@ const host = argv.h || 'localhost'
 app.use(express.static(path.resolve(__dirname, '../static')))
 app.use(bodyParser.json())
 
-const worker = new TesseractWorker();
-
-app.post('/recognize', (req, res) => {
+app.post('/recognize', async (req, res) => {
   const body = (req as { body: { image: string, languages?: string[] } }).body
   const image = body.image
   const languages = body.languages
@@ -29,19 +27,15 @@ app.post('/recognize', (req, res) => {
   } else if (Array.isArray(languages)) {
     lang = languages.join('+')
   }
-  const file = tmp.tmpNameSync()
-  fs.writeFileSync(file, image.split(',')[1], { encoding: 'base64' })
-  worker.recognize(file, lang || 'eng')
-    .progress(message => console.log(message))
-    .then(result => {
-      res.json({ text: result.text })
-    })
-    .catch((error) => {
-      res.json({ error: error.message })
-    })
-    .finally(() => {
-      tmp.setGracefulCleanup()
-    });
+  try {
+    const file = tmp.tmpNameSync()
+    fs.writeFileSync(file, image.split(',')[1], { encoding: 'base64' })
+    const result = await Tesseract.recognize(file, lang || 'eng')
+    res.json({ text: result.data.text })
+  } catch (error) {
+    res.json({ error: error.message })
+  }
+  tmp.setGracefulCleanup()
 })
 
 app.listen(port, host, () => {
