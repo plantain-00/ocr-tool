@@ -41,8 +41,8 @@ module.exports = {
     export: `no-unused-export "src/**/*.ts" --strict --need-module tslib`,
     commit: `commitlint --from=HEAD~1`,
     markdown: `markdownlint README.md`,
-    typeCoverage: 'type-coverage -p src --strict --ignore-catch',
-    typeCoverageStatic: 'type-coverage -p static --strict --ignore-files "static/variables.ts"'
+    typeCoverage: 'type-coverage -p src --ignore-catch',
+    typeCoverageStatic: 'type-coverage -p static --ignore-files "static/variables.ts"'
   },
   test: {
     jasmine: [
