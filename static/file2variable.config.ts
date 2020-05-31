@@ -1,4 +1,6 @@
-module.exports = {
+import { ConfigData } from 'file2variable-cli'
+
+export default {
   base: 'static',
   files: [
     'static/*.template.html'
@@ -11,4 +13,4 @@ module.exports = {
     }
   },
   out: 'static/variables.ts'
-}
+} as ConfigData
