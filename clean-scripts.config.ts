@@ -37,7 +37,7 @@ export default {
     less: `stylelint ${lessFiles}`,
     export: `no-unused-export "src/**/*.ts" --strict --need-module tslib`,
     markdown: `markdownlint README.md`,
-    typeCoverage: 'type-coverage -p src --ignore-catch',
+    typeCoverage: 'type-coverage -p src',
     typeCoverageStatic: 'type-coverage -p static --ignore-files "static/variables.ts"'
   },
   test: {

@@ -32,8 +32,8 @@ app.post('/recognize', async (req, res) => {
     fs.writeFileSync(file, image.split(',')[1], { encoding: 'base64' })
     const result = await Tesseract.recognize(file, lang || 'eng')
     res.json({ text: result.data.text })
-  } catch (error) {
-    res.json({ error: error.message })
+  } catch (error: unknown) {
+    res.json({ error: error instanceof Error ? error.message : String(error) })
   }
   tmp.setGracefulCleanup()
 })
