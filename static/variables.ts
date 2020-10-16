@@ -25,7 +25,7 @@ export function indexTemplateHtml(_ctx, _cache) {
       ]))
     }), 256 /* UNKEYED_FRAGMENT */)),
     _createVNode(_component_file_uploader, {
-      "onFile-got": _cache[2] || (_cache[2] = $event => (_ctx.fileGot($event))),
+      onFileGot: _cache[2] || (_cache[2] = $event => (_ctx.fileGot($event))),
       accept: "image/*"
     }),
     _createVNode("pre", null, _toDisplayString(_ctx.text), 1 /* TEXT */)
