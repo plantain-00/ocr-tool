@@ -26,11 +26,11 @@
     "@types/body-parser": "1.19.0",
     "@types/express": "4.17.12",
     "@types/minimist": "1.2.1",
-    "@types/node": "15.12.1",
+    "@types/node": "15.12.2",
     "@types/tmp": "0.2.0",
     "@types/webpack": "5.28.0",
-    "@typescript-eslint/eslint-plugin": "4.26.0",
-    "@typescript-eslint/parser": "4.26.0",
+    "@typescript-eslint/eslint-plugin": "4.26.1",
+    "@typescript-eslint/parser": "4.26.1",
     "autoprefixer": "10.2.6",
     "clean-css-cli": "5.3.0",
     "clean-release": "2.15.2",
@@ -45,21 +45,21 @@
     "less": "4.0.0",
     "markdownlint-cli": "0.27.1",
     "no-unused-export": "1.14.1",
-    "postcss": "8.3.0",
+    "postcss": "8.3.2",
     "postcss-cli": "8.3.1",
     "rev-static": "3.6.0",
     "rimraf": "3.0.2",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
-    "ts-loader": "9.2.2",
+    "ts-loader": "9.2.3",
     "ts-node": "10.0.0",
     "tsconfig-plantain": "0.0.1",
     "type-coverage": "2.17.5",
     "typescript": "4.3.2",
-    "vue": "3.1.0-beta.7",
+    "vue": "3.1.1",
     "watch-then-execute": "1.2.0",
     "webpack": "5.38.1",
-    "webpack-cli": "4.7.0"
+    "webpack-cli": "4.7.2"
   },
   "typeCoverage": {
     "atLeast": 100
@@ -70,6 +70,6 @@
     "minimist": "1.2.5",
     "tesseract.js": "2.1.4",
     "tmp": "0.2.1",
-    "tslib": "2.2.0"
+    "tslib": "2.3.0"
   }
 }
