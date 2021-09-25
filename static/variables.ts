@@ -17,7 +17,7 @@ export function indexTemplateHtml(_ctx, _cache) {
           type: "checkbox",
           id: language,
           value: language,
-          "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (_ctx.selectedLanguages = $event))
+          "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => ((_ctx.selectedLanguages) = $event))
         }, null, 8 /* PROPS */, ["id", "value"]), [
           [_vModelCheckbox, _ctx.selectedLanguages]
         ]),
